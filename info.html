@@ -4,23 +4,34 @@
     <meta charset="UTF-8">
     <title>Information om platser</title>
     <link rel="stylesheet" href="style1.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   </head>
   <body>
 
     <header>
         <h1>Vattenskotrar</h1>
 
-        <button id="menu-icon">&#9776;</button>
+        <div id="menu-icon">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
 
-          <nav id="menu">
-            <a href="index1.html">Hem</a>
-            <a href="info.html">Information</a>
-            <a href="#">Kontakt</a>
-          </nav>
+        <nav id="nav">
+          <a href="index.html">Hem</a>
+          <a href="info.html">Information</a>
+          <a href="#">Kontakt</a>
+        </nav>
           
           
         </div>
       </header>
+      <nav id="menu">
+        <a href="index.html">Hem</a>
+        <a href="info.html">Information</a>
+        <a href="#">Kontakt</a>
+      </nav>
 
 
       <main>
@@ -66,24 +77,13 @@
 
    
     <footer>
-        &copy; 2023 Vattenskotrar AB
-      </footer>
+      &copy; 2023 Vattenskotrar AB
+    </footer>
 
 
-      <script>
-        var menuIcon = document.getElementById('menu-icon');
-        var menu = document.getElementById('menu');
       
-        menuIcon.addEventListener('click', function() {
-          if (menu.style.display === 'block') {
-            menu.style.display = 'none';
-          } else {
-            menu.style.display = 'block';
-          }
-        });
-      </script>
      
-      
+  <script src="main.js"></script>
       
       
       

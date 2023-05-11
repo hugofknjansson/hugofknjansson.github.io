@@ -252,6 +252,28 @@ body {
     justify-content: space-between;
   }
   
+
+  /*anpassad meny för olika skärmstorlekar*/
+
+#menu-icon {
+  display: none;
+}
+
+#menu-icon div {
+  width: 20px;
+  height: 3px;
+  background:white;
+  margin: 5px;
+  z-index: 1;
+  color: white;
+
+}
+
+#menu {
+  display: none;
+}
+
+
   /* media query för att grid ska bli en kolumn efter en viss storlek*/
 
   @media screen and (max-width: 600px) {
@@ -260,21 +282,31 @@ body {
       height: auto;
     }
 
-
-  #menu-icon {
-    display: none;
   }
+ /*för att meyn ska byta från utlagd till att var under en burgermeny*/
 
-  #menu {
-    display: block;
-  }
-
-  @media (max-width: 600px) {
+  @media screen and (max-width: 600px) {
+    #nav{
+      display: none;
+    }
     #menu-icon {
       display: block;
     }
 
     #menu {
       display: none;
+      flex-direction: column;
+      align-items: end;
+      background-color: #008080;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 15px;
+    }
+
+    nav a:hover {
+      background-color: #777;
     }
   }
