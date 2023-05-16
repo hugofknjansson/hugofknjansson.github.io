@@ -3,78 +3,93 @@
   <head>
     <meta charset="UTF-8">
     <title>Information om platser</title>
+
+     <!--Länkar till swiper för att den ska fungera -->
+
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+     <!-- länk till stylingen - samma för båda html filerna. -->
+
     <link rel="stylesheet" href="style1.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   
 
   </head>
   <body>
-
     <header>
-        <h1>Vattenskotrar</h1>
+      <h1>Vattenskotrar</h1>
 
-        <div id="menu-icon">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
+    <!-- Här är hamburgerikonen gjord på tre linjer som divs. -->
 
-        <nav id="nav">
-          <a href="index.html">Hem</a>
-          <a href="info.html">Information</a>
-          <a href="#">Kontakt</a>
-        </nav>
-          
-          
-        </div>
-      </header>
-      <nav id="menu">
+      <div id="menu-icon">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+
+    <!--Det här är den vanliga menyn på större enheter. -->
+
+      <nav id="nav">
         <a href="index.html">Hem</a>
         <a href="info.html">Information</a>
-        <a href="#">Kontakt</a>
+
       </nav>
+        
+        
+      </div>
+    </header>
+<!-- Nedan är vad som kommer fram när man trycker på hamburgerikonen på mobila enheter -->
 
+    <nav id="menu">
+      <a href="index.html">Hem</a>
+      <a href="info.html">Information</a>
 
+    </nav>
+    
       <main>
+
+
+
+        <!-- info för vad sidan innnehåller. -->
 
 <div class="rubrik">
   <h1>Platser att köra skoter</h1>
 </div>
-   
+<!-- Platser i kortvyer med kort beskrivning -->
 
     <div class="map-grid">
 
       <div class="plats">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226699.54216769313!2d-74.25986374603993!3d40.69714939262093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25faa82d2a5e3%3A0x5a5f5b5b5d9a8219!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sse!4v1651774716977!5m2!1sen!2sse" width="600" height="450" style="border:20px;" allowfullscreen="" loading="lazy"></iframe>
-        <h3>Yamaha</h3>
-        <p>En snabb och kraftfull vattenskoter som passar perfekt för racing och vattensport.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8150.796468958933!2d18.90053067789165!3d59.28788040251274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46f5741069214bbf%3A0xbfee8fb6ece8997c!2s130%2039%20Sandhamn!5e0!3m2!1ssv!2sse!4v1684246434281!5m2!1ssv!2sse" width="600" height="450" style="border:20px;" allowfullscreen="" loading="lazy"></iframe>
+        <h3>Sandhamn</h3>
+        <p>Ett fartfyllt ställer med stor sjö att leka i. Perfekt för dig som gillar mycket sjö och båtvågor att hoppa i.</p>
         <button>Köp nu</button>
       </div>
 
       <div class="plats">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d403217.2959689555!2d-122.67344773895613!3d45.52306227152266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a10457c7e149%3A0x8f1e53faafe1371e!2sPortland%2C%20Oregon%2C%20USA!5e0!3m2!1sen!2sse!4v1651774683464!5m2!1sen!2sse" width="600" height="450" style="border:20px;" allowfullscreen="" loading="lazy"></iframe>
-        <h3>Sea Doo</h3>
-        <p>En robust och pålitlig vattenskoter som är perfekt för utflykter och fiske.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64560.06084391039!2d16.462690714457327!3d59.62465295670649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465e4281455ba9a7%3A0xbc415db6e2654020!2zVsOkc3RlcsOlcw!5e0!3m2!1ssv!2sse!4v1684246972900!5m2!1ssv!2sse" width="600" height="450" style="border:20px;" allowfullscreen="" loading="lazy"></iframe>
+        <h3>Västerås</h3>
+        <p>Ett mysigt men ändå stort ställe att åka på. Ofta får du sällskap av andra förare och kanske kan ta en kall som after jetski.</p>
         <button>Köp nu</button>
       </div>
 
       <div class="plats">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226699.54216769313!2d-74.25986374603993!3d40.69714939262093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25faa82d2a5e3%3A0x5a5f5b5b5d9a8219!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sse!4v1651774716977!5m2!1sen!2sse" width="600" height="450" style="border:20px;" allowfullscreen="" loading="lazy"></iframe>
-        <h3>Yamaha</h3>
-        <p>En snabb och kraftfull vattenskoter som passar perfekt för racing och vattensport.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32150.863034062142!2d18.666059848766505!3d59.758938433420134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465ff7b35b7c3b5b%3A0xdf8ac43302f8f0a8!2sNorrt%C3%A4lje!5e0!3m2!1ssv!2sse!4v1684246832267!5m2!1ssv!2sse" width="600" height="450" style="border:20px;" allowfullscreen="" loading="lazy"></iframe>
+        <h3>Norrtälje</h3>
+        <p>I roslagen finns det åtskilda platser att åka vattenskoter på och en av de är i norrtälje. Där är vattnet ofta ganska lugnt och funkar bra för dig som vill åka snabbt och på platt vatten. </p>
         <button>Köp nu</button>
       </div>
 
       <div class="plats">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d403217.2959689555!2d-122.67344773895613!3d45.52306227152266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a10457c7e149%3A0x8f1e53faafe1371e!2sPortland%2C%20Oregon%2C%20USA!5e0!3m2!1sen!2sse!4v1651774683464!5m2!1sen!2sse" width="600" height="450" style="border:20px;" allowfullscreen="" loading="lazy"></iframe>
-        <h3>Sea Doo</h3>
-        <p>En robust och pålitlig vattenskoter som är perfekt för utflykter och fiske.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34179.9998034847!2d18.26738946351591!3d57.62723580827781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46f7a8d3d122ce09%3A0xa00fef5b28d09c0!2sVisby!5e0!3m2!1ssv!2sse!4v1684246926136!5m2!1ssv!2sse" width="600" height="450" style="border:20px;" allowfullscreen="" loading="lazy"></iframe>
+        <h3>Visby</h3>
+        <p>Här är det bara att tuta och köra. Öppet hav med gott om vågor gör att det passar bra för de större skottrarna med kraftigare motorer. Om du nyss införskaffat en Sea Doo 300X eller en Yamaha octopus bör du ta dig till sveriges största ö.</p>
         <button>Köp nu</button>
       </div>
       
 
 
     </div>
-
+<!-- Enkel footer för att det är stilrent och som om nödvändigt kan fyllas med info. -->
    
     <footer>
       &copy; 2023 Vattenskotrar AB
@@ -82,7 +97,7 @@
 
 
       
-     
+     <!-- Här är länkat script delvis för swipern och delvis för att menyn för mobila enheter skall funkgera.  -->
   <script src="main.js"></script>
       
       

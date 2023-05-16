@@ -4,14 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vattenskotrar</title>
+
+  <!--Länkar till swiper för att den ska fungera -->
+
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- länk till stylingen - samma för båda html filerna. -->
+
   <link rel="stylesheet" href="style1.css">
+
 </head>
 <body>
 
+  <!-- Först är det header som är med i båda html filerna. -->
+
   <header>
         <h1>Vattenskotrar</h1>
+
+      <!-- Här är hamburgerikonen gjord på tre linjer som divs. -->
 
         <div id="menu-icon">
           <div class="line1"></div>
@@ -19,22 +30,28 @@
           <div class="line3"></div>
         </div>
 
+      <!--Det här är den vanliga menyn på större enheter. -->
+
         <nav id="nav">
           <a href="index.html">Hem</a>
           <a href="info.html">Information</a>
-          <a href="#">Kontakt</a>
+
         </nav>
           
           
         </div>
       </header>
+<!-- Nedan är vad som kommer fram när man trycker på hamburgerikonen på mobila enheter -->
+
       <nav id="menu">
         <a href="index.html">Hem</a>
         <a href="info.html">Information</a>
-        <a href="#">Kontakt</a>
+
       </nav>
       
   <main>
+
+    <!--Här är bildspelet i bakgrunden -->
     
     <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -43,37 +60,55 @@
           <div class="swiper-slide" style="background-image:url('hugo-3.jpg')"></div>
         </div>
       </div>
+
+      <!-- Titeln framför tillsammans med knapp -->
       <div class="banner">
         <h2>Välkommen till en värld av vattenskotrar</h2>
-        <button>Se produkter</button>
+        <a href="#se-produkter">
+          <button>Se skotrar</button>
+        </a>
       </div>
+
+      <!-- Sedan exempel på vattenskotrar-->
       
-  <div class="products">
+  <div class="products" id="se-produkter">
     <div class="product">
       <img src="hugo-1.jpg" alt="Hugo 1">
       <h3>Yamaha</h3>
       <p>En snabb och kraftfull vattenskoter som passar perfekt för racing och vattensport.</p>
-      <button>Köp nu</button>
+      <a href="https://www.yamaha-motor.eu/se/sv/products/waverunners/?utm_source=google&utm_medium=cpc&utm_campaign=2023_02_YMSE_Marine_AllProducts__Search_Brand&utm_content=search_ad&gclid=CjwKCAjw04yjBhApEiwAJcvNoWggZocNNRb84tk-0wiKFUbine2YzQWvRVqgP2RUp2_mZyeg8WCJBBoCOIYQAvD_BwE#/">
+        <button>Köp nu</button>
+      </a>
     </div>
     <div class="product">
       <img src="hugo-2.jpg" alt="Hugo 2">
       <h3>Sea Doo</h3>
       <p>En robust och pålitlig vattenskoter som är perfekt för utflykter och fiske.</p>
-      <button>Köp nu</button>
+      <a href=https://www.sea-doo.com/se/sv/>
+        <button>Köp nu</button>
+      </a>
     </div>
     <div class="product">
       <img src="hugo-3.jpg" alt="Hugo 3">
       <h3>Kawasaki</h3>
       <p>En stilren och bekväm vattenskoter som passar perfekt för avslappnade turer och familjeutflykter.</p>
-      <button>Köp nu</button>
+      <a href="https://www.kawasaki.se/sv/products/Jet_Ski_?Uid=05DEWlhZXFhZWV5ZWlxaXFpdXF5dUFBGGx5FOy0">
+        <button>Köp nu</button>
+      </a>
     </div>
   </div>
+
 </main>
+
+<!-- Enkel footer för att det är stilrent och som om nödvändigt kan fyllas med info. -->
+
 <footer>
   &copy; 2023 Vattenskotrar AB
 </footer>
 
-<script src="main1.js"></script>
+<!-- Här är länkat script delvis för swipern och delvis för att menyn för mobila enheter skall funkgera.  -->
+
+<script src="main.js"></script>
 </body>
 
 
